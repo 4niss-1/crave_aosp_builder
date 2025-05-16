@@ -1,0 +1,12 @@
+version: 1
+projects:
+  evolution_x_lancelot:
+    manifest: https://github.com/Evolution-X/manifest.git
+    branch: vic
+    path: evolution_x
+    local_manifests:
+      repo: https://github.com/katz-dll/local_manifest.git
+      branch: lineage-22.1
+    build:
+      lunch: evolution_lancelot-userdebug
+      command: mka evolution
